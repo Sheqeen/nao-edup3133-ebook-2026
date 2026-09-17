@@ -1,0 +1,710 @@
+{
+  "project": "EDUP3133 Interactive e-Book 2026",
+  "ux_status": "LOCKED — replicated from approved Topik 1 prototype",
+  "home": "assets/home.png",
+  "topics": {
+    "1": {
+      "title": "Teknologi Pendidikan dan Teknologi Pengajaran",
+      "accent": "#e93e7c",
+      "accent_soft": "#fff0f5",
+      "pages": [
+        "assets/topik1-01.png",
+        "assets/topik1-02.png",
+        "assets/topik1-03.png",
+        "assets/topik1-04.png",
+        "assets/topik1-05.png",
+        "assets/topik1-06.png",
+        "assets/topik1-07.png",
+        "assets/topik1-08.png",
+        "assets/topik1-09.png",
+        "assets/topik1-10.png"
+      ]
+    },
+    "2": {
+      "title": "Model Pengintegrasian Teknologi dalam PdP",
+      "accent": "#6f9e4a",
+      "accent_soft": "#f2f8ed",
+      "pages": [
+        "assets/topik2-01.png",
+        "assets/topik2-02.png",
+        "assets/topik2-03.png",
+        "assets/topik2-04.png",
+        "assets/topik2-05.png",
+        "assets/topik2-06.png",
+        "assets/topik2-07.png",
+        "assets/topik2-08.png",
+        "assets/topik2-09.png",
+        "assets/topik2-10.png"
+      ]
+    },
+    "3": {
+      "title": "Reka Bentuk Pengajaran",
+      "accent": "#3097dd",
+      "accent_soft": "#eef8ff",
+      "pages": [
+        "assets/topik3-01.png",
+        "assets/topik3-02.png",
+        "assets/topik3-03.png",
+        "assets/topik3-04.png",
+        "assets/topik3-05.png",
+        "assets/topik3-06.png",
+        "assets/topik3-07.png",
+        "assets/topik3-08.png",
+        "assets/topik3-09.png",
+        "assets/topik3-10.png"
+      ]
+    },
+    "4": {
+      "title": "Media Pengajaran dan Sumber Pembelajaran dalam Talian",
+      "accent": "#9a63d8",
+      "accent_soft": "#f7f0ff",
+      "pages": [
+        "assets/topik4-01.png",
+        "assets/topik4-02.png",
+        "assets/topik4-03.png",
+        "assets/topik4-04.png",
+        "assets/topik4-05.png",
+        "assets/topik4-06.png",
+        "assets/topik4-07.png",
+        "assets/topik4-08.png",
+        "assets/topik4-09.png",
+        "assets/topik4-10.png"
+      ]
+    },
+    "5": {
+      "title": "Pembangunan Objek Pembelajaran Digital",
+      "accent": "#eb634e",
+      "accent_soft": "#fff3ef",
+      "pages": [
+        "assets/topik5-01.png",
+        "assets/topik5-02.png",
+        "assets/topik5-03.png",
+        "assets/topik5-04.png",
+        "assets/topik5-05.png",
+        "assets/topik5-06.png",
+        "assets/topik5-07.png",
+        "assets/topik5-08.png",
+        "assets/topik5-09.png",
+        "assets/topik5-10.png"
+      ]
+    },
+    "6": {
+      "title": "Multimedia Interaktif dalam PdP",
+      "accent": "#149aa0",
+      "accent_soft": "#edfafa",
+      "pages": [
+        "assets/topik6-01.png",
+        "assets/topik6-02.png",
+        "assets/topik6-03.png",
+        "assets/topik6-04.png",
+        "assets/topik6-05.png",
+        "assets/topik6-06.png",
+        "assets/topik6-07.png",
+        "assets/topik6-08.png",
+        "assets/topik6-09.png",
+        "assets/topik6-10.png"
+      ]
+    },
+    "7": {
+      "title": "Persekitaran Pembelajaran dalam Talian",
+      "accent": "#d2a000",
+      "accent_soft": "#fff9df",
+      "pages": [
+        "assets/topik7-01.png",
+        "assets/topik7-02.png",
+        "assets/topik7-03.png",
+        "assets/topik7-04.png",
+        "assets/topik7-05.png",
+        "assets/topik7-06.png",
+        "assets/topik7-07.png",
+        "assets/topik7-08.png",
+        "assets/topik7-09.png",
+        "assets/topik7-10.png"
+      ]
+    },
+    "8": {
+      "title": "Trend Teknologi, Isu dan Cabaran Pengintegrasian Teknologi dalam PdP",
+      "accent": "#7548b5",
+      "accent_soft": "#f5effd",
+      "pages": [
+        "assets/topik8-01.png",
+        "assets/topik8-02.png",
+        "assets/topik8-03.png",
+        "assets/topik8-04.png",
+        "assets/topik8-05.png",
+        "assets/topik8-06.png",
+        "assets/topik8-07.png",
+        "assets/topik8-08.png",
+        "assets/topik8-09.png",
+        "assets/topik8-10.png"
+      ]
+    }
+  },
+  "integrity": [
+    {
+      "asset": "home.png",
+      "source": "ChatGPT Image Sep 8, 2026, 02_56_05 AM.png",
+      "sha256": "7997f88c27973fb74130b219f3193b85c747c548a2355249122e9367df1196fc"
+    },
+    {
+      "asset": "topik1-01.png",
+      "topic": 1,
+      "page": 1,
+      "source": "ChatGPT Image Aug 17, 2026, 04_36_45 AM (1)(1).png",
+      "sha256": "e094c6386da0edcbf8eaefdfea6f76654db1c8c760b6d07e077440b3ad8047cc"
+    },
+    {
+      "asset": "topik1-02.png",
+      "topic": 1,
+      "page": 2,
+      "source": "ChatGPT Image Aug 17, 2026, 04_36_37 AM(1).png",
+      "sha256": "22eed63fb9fb027b47501c35a22bf872b1297f2f1da5b88516920ea88a979e90"
+    },
+    {
+      "asset": "topik1-03.png",
+      "topic": 1,
+      "page": 3,
+      "source": "ChatGPT Image Aug 17, 2026, 04_36_46 AM (3)(1).png",
+      "sha256": "41c28a5085dffc43f3b4d212c22397de843ddf1c1b95ff8ac6001460e0ee605c"
+    },
+    {
+      "asset": "topik1-04.png",
+      "topic": 1,
+      "page": 4,
+      "source": "ChatGPT Image Aug 17, 2026, 04_36_46 AM (4)(1).png",
+      "sha256": "d10baeaf786359ec7f2107844157fbe2746b7dfb29e3dcbaf7b413aa83f084e7"
+    },
+    {
+      "asset": "topik1-05.png",
+      "topic": 1,
+      "page": 5,
+      "source": "ChatGPT Image Aug 17, 2026, 04_36_46 AM (5)(1).png",
+      "sha256": "e138b8ae8f48f3ea74ebbe9aa6ecdbc43eacba268a237281d639d0cc43f76ec8"
+    },
+    {
+      "asset": "topik1-06.png",
+      "topic": 1,
+      "page": 6,
+      "source": "ChatGPT Image Aug 17, 2026, 04_36_46 AM (6)(1).png",
+      "sha256": "7fc48d682ea1c408e41231fd42b731e54103dd78b09faec33e06fa3c97088788"
+    },
+    {
+      "asset": "topik1-07.png",
+      "topic": 1,
+      "page": 7,
+      "source": "ChatGPT Image Aug 17, 2026, 04_36_47 AM (7)(1).png",
+      "sha256": "390a767c23a9e2e69d66196400a6e48c3bccd968a7b7736ced33d0e505bf6261"
+    },
+    {
+      "asset": "topik1-08.png",
+      "topic": 1,
+      "page": 8,
+      "source": "ChatGPT Image Aug 17, 2026, 04_36_47 AM (8)(1).png",
+      "sha256": "93754c187e6563b8b50fd0873055c2ff54de76278e974682021932c4ccb226da"
+    },
+    {
+      "asset": "topik1-09.png",
+      "topic": 1,
+      "page": 9,
+      "source": "ChatGPT Image Aug 17, 2026, 04_36_47 AM (9)(1).png",
+      "sha256": "ba7db8007c2cdfad956c1c6bb93d37a2dc6a08d182f8cca2db95577c84efdeea"
+    },
+    {
+      "asset": "topik1-10.png",
+      "topic": 1,
+      "page": 10,
+      "source": "ChatGPT Image Aug 17, 2026, 04_36_47 AM (10)(1).png",
+      "sha256": "85cda7da8d32e74f090ab1452a81bfc3b070b5c74bdf27dc83b88853d5ad138a"
+    },
+    {
+      "asset": "topik2-01.png",
+      "topic": 2,
+      "page": 1,
+      "source": "lego_style_technology_integration_infographic.png",
+      "sha256": "44143cceb5f89cace39b4ece4a04fb6b04089a4e6e2f6c71b5484405c687a33a"
+    },
+    {
+      "asset": "topik2-02.png",
+      "topic": 2,
+      "page": 2,
+      "source": "ChatGPT Image Aug 17, 2026, 05_21_57 AM (2).png",
+      "sha256": "50b75dffa65f43326aa44a3776026657ac46b67b2ab3eda6ad0bad1252d45895"
+    },
+    {
+      "asset": "topik2-03.png",
+      "topic": 2,
+      "page": 3,
+      "source": "tpack_infographic_components_and_applications.png",
+      "sha256": "ef05c5ca0c3b4cd726e0002288f9db7976290d7d5d928b35463df2e5a39e3ec6"
+    },
+    {
+      "asset": "topik2-04.png",
+      "topic": 2,
+      "page": 4,
+      "source": "samr_lego_infographic_lesson_page.png",
+      "sha256": "a4ba889012f26a0d87e241fd8c3a7c37ff8d324485a3befabe407311ad55914c"
+    },
+    {
+      "asset": "topik2-05.png",
+      "topic": 2,
+      "page": 5,
+      "source": "ChatGPT Image Aug 17, 2026, 05_21_57 AM (5).png",
+      "sha256": "9755d82461b606579792f1cb37723164b8563e5206fa50a7a61ad2ec64504c66"
+    },
+    {
+      "asset": "topik2-06.png",
+      "topic": 2,
+      "page": 6,
+      "source": "model_3e_pembelajaran_berasaskan_teknologi.png",
+      "sha256": "a1b0548e84a9144cc5232584ccdfd60127d71f5950910a2fdb57f8ca82c73ca9"
+    },
+    {
+      "asset": "topik2-07.png",
+      "topic": 2,
+      "page": 7,
+      "source": "model_3r_teknologi_dalam_pembelajaran.png",
+      "sha256": "482fecaf41042c8ec99d66f7b1bd43adc5cbd1bfe8b9b792de923efeef95f768"
+    },
+    {
+      "asset": "topik2-08.png",
+      "topic": 2,
+      "page": 8,
+      "source": "ChatGPT Image Aug 17, 2026, 05_21_58 AM (8).png",
+      "sha256": "a41857ac97423a122bfc38f03a0a24c2071c51a380880e1167a354181c6f10ae"
+    },
+    {
+      "asset": "topik2-09.png",
+      "topic": 2,
+      "page": 9,
+      "source": "lego_style_model_comparison_infographic.png",
+      "sha256": "807ef4e3a515cfb9b3169934499a1c3e73905152e47bd6478c421938f9f5aa2e"
+    },
+    {
+      "asset": "topik2-10.png",
+      "topic": 2,
+      "page": 10,
+      "source": "topik_2_fokus_ujian_panduan_edup3133.png",
+      "sha256": "192d97b3b56655011fe1fc4b5b1209c75ae66e971214d8659e37cdbdf98f7178"
+    },
+    {
+      "asset": "topik3-01.png",
+      "topic": 3,
+      "page": 1,
+      "source": "edup3133_topik_3_reka_bentuk_pengajaran.png",
+      "sha256": "7c2ea6bec4150656a6b4f679277a2abd39c1e2871584e7a21084c1667636be8c"
+    },
+    {
+      "asset": "topik3-02.png",
+      "topic": 3,
+      "page": 2,
+      "source": "edup3133_topik_3_peta_topik_lego.png",
+      "sha256": "6c57981a2bcdca022401a75f5a435dddde6541d3bc730d71b7df031340ac6bbc"
+    },
+    {
+      "asset": "topik3-03.png",
+      "topic": 3,
+      "page": 3,
+      "source": "lego_style_infographic_concept_and_roles_of_instr.png",
+      "sha256": "8e9d2f66099d5fd04ef468209a940de6259991e75cae1e49c03114fa3dd2dfd2"
+    },
+    {
+      "asset": "topik3-04.png",
+      "topic": 3,
+      "page": 4,
+      "source": "model_addie_lego_learning_infographic.png",
+      "sha256": "c13385c64a947b95fecc5976676c396b1816f8f48f8791d429a416e59e80d2ec"
+    },
+    {
+      "asset": "topik3-05.png",
+      "topic": 3,
+      "page": 5,
+      "source": "model_assure_panduan_infografik_edup3133.png",
+      "sha256": "fe075cca7e475a2765149717c9991bd8a249114e4cc95182286341c45f810313"
+    },
+    {
+      "asset": "topik3-06.png",
+      "topic": 3,
+      "page": 6,
+      "source": "gagné_s_nine_events_lego_infographic.png",
+      "sha256": "632917d39241223b38e36a49826cff910c00cf0059946f73c874bc012e054be7"
+    },
+    {
+      "asset": "topik3-07.png",
+      "topic": 3,
+      "page": 7,
+      "source": "backward_design_hasil_bukti_aktiviti.png",
+      "sha256": "6684462a89e561914ca8e974372c23041f7317c4b41634efc0fc86ca5a1683cf"
+    },
+    {
+      "asset": "topik3-08.png",
+      "topic": 3,
+      "page": 8,
+      "source": "comparing_four_instructional_models.png",
+      "sha256": "acc2f166e59f5cb0402bf91c56e52ca5fc18822f9748319b4904e47ee3c2cd6e"
+    },
+    {
+      "asset": "topik3-09.png",
+      "topic": 3,
+      "page": 9,
+      "source": "lego_style_infographic_choosing_teaching_models.png",
+      "sha256": "b84fb04da726a8a073c97f7679bcc8ec04eab2fa196cbc08eabadcbf2829a505"
+    },
+    {
+      "asset": "topik3-10.png",
+      "topic": 3,
+      "page": 10,
+      "source": "lego_style_edup3133_exam_focus_guide.png",
+      "sha256": "18a5e1e75b48d19ff46f2a673232a12f570d86ded961575a3ea4f63d59a13f3c"
+    },
+    {
+      "asset": "topik4-01.png",
+      "topic": 4,
+      "page": 1,
+      "source": "topik_4_media_pengajaran_infografik.png",
+      "sha256": "448e45f3028e8b8cce4cf433bf11dcec85d2ec70cee52157090be210c1737718"
+    },
+    {
+      "asset": "topik4-02.png",
+      "topic": 4,
+      "page": 2,
+      "source": "edup3133_topik_4_peta_topik.png",
+      "sha256": "d2888e0d29f13df61f38be2c3dc1f0df2df7df5a78ac5a4314e21f00e5bdf0d6"
+    },
+    {
+      "asset": "topik4-03.png",
+      "topic": 4,
+      "page": 3,
+      "source": "konsep_media_pengajaran_dalam_gaya_lego.png",
+      "sha256": "beb38c7f8acea9c6b9cd910757a00448ece04a1204ecb29c91918528ccf02482"
+    },
+    {
+      "asset": "topik4-04.png",
+      "topic": 4,
+      "page": 4,
+      "source": "media_bukan_digital_infografik_lego_edu3133.png",
+      "sha256": "6aef9984412d481c0bb930d4bc87fee72c4123ed9ba8dcaf3a0f97e6d45fc35d"
+    },
+    {
+      "asset": "topik4-05.png",
+      "topic": 4,
+      "page": 5,
+      "source": "media_digital_infografik_lego_edup3133.png",
+      "sha256": "f2d86c4bf0e9d3db0b2d6b4a80f8967bc71c7a5fde43bf96be0b43ce246010ad"
+    },
+    {
+      "asset": "topik4-06.png",
+      "topic": 4,
+      "page": 6,
+      "source": "online_learning_resources_infographic.png",
+      "sha256": "3cfddbed64216d7fe2e1fd650bc8df38731d341eefd1710120e92c2223792591"
+    },
+    {
+      "asset": "topik4-07.png",
+      "topic": 4,
+      "page": 7,
+      "source": "lego_style_digital_integration_infographic.png",
+      "sha256": "f29ea0e8ba6da2382fe4c2069da11652817ba4a41b1d064c44b545c94b15cac9"
+    },
+    {
+      "asset": "topik4-08.png",
+      "topic": 4,
+      "page": 8,
+      "source": "lego_style_media_evaluation_infographic.png",
+      "sha256": "b69b3f72758150a76b8ad9bb7011f8fa25863fb4ca14a36028b0412d54559553"
+    },
+    {
+      "asset": "topik4-09.png",
+      "topic": 4,
+      "page": 9,
+      "source": "panduan_infografik_pemilihan_media_pdp.png",
+      "sha256": "073fa143c9a2cff161203172dcca0e6f35bf88f6c6da836e5fad550c4ab1eae6"
+    },
+    {
+      "asset": "topik4-10.png",
+      "topic": 4,
+      "page": 10,
+      "source": "edup3133_topik_4_infografik_lego.png",
+      "sha256": "31b47711b5de5d61016fbe53e41b0874c1bd89f528f8c3aca8c4670aa4be23aa"
+    },
+    {
+      "asset": "topik5-01.png",
+      "topic": 5,
+      "page": 1,
+      "source": "edup3133_topik_5_objek_pembelajaran_digital.png",
+      "sha256": "d1ed113b453311d76ce25783fd8636a7b5dfeef2788490027a583467163c6dae"
+    },
+    {
+      "asset": "topik5-02.png",
+      "topic": 5,
+      "page": 2,
+      "source": "edup3133_topik_5_peta_topik.png",
+      "sha256": "bd9f5f31772707ae7af6968e27bd367a4a9bb729324bfad7c86b527294490af0"
+    },
+    {
+      "asset": "topik5-03.png",
+      "topic": 5,
+      "page": 3,
+      "source": "topik_5_objek_pembelajaran_digital.png",
+      "sha256": "f9dff8c69a85f3f8f83cf554613aafc9594a183d677a120c3393223b2fb37e6f"
+    },
+    {
+      "asset": "topik5-04.png",
+      "topic": 5,
+      "page": 4,
+      "source": "topik_5_pembangunan_visual_infografik.png",
+      "sha256": "2a41136f4b40388dc0e2284dfe3caf3426184c099aca8a3b3c0570b4df3c38b7"
+    },
+    {
+      "asset": "topik5-05.png",
+      "topic": 5,
+      "page": 5,
+      "source": "topik_5_pembangunan_video_i.png",
+      "sha256": "c99b595f244169810c331bdd2d2555fb0238dc9cc8e45d5885557a7404b3b02f"
+    },
+    {
+      "asset": "topik5-06.png",
+      "topic": 5,
+      "page": 6,
+      "source": "topik_5_pembangunan_video_ii.png",
+      "sha256": "a4a6f5123f0a81f03ee589cae3f320a38e73bf00531ca351d39057d3427baf43"
+    },
+    {
+      "asset": "topik5-07.png",
+      "topic": 5,
+      "page": 7,
+      "source": "lego_themed_audio_learning_infographic.png",
+      "sha256": "5d6eb4a2b7af36496633b924c9263f67fee93b63fcaafcd106f1c5d37f8f8808"
+    },
+    {
+      "asset": "topik5-08.png",
+      "topic": 5,
+      "page": 8,
+      "source": "topik_5_pentaksiran_dalam_talian.png",
+      "sha256": "f0b353b2d9b5f5a160a08abde5fbf1e2107dfdbebba70102dbcc22859aea04c7"
+    },
+    {
+      "asset": "topik5-09.png",
+      "topic": 5,
+      "page": 9,
+      "source": "tapak_pembelajaran_digital_lego.png",
+      "sha256": "cf602d44daacf77a85a173d0c054e215e6621a4d622424c42dc64af9a9a95a2f"
+    },
+    {
+      "asset": "topik5-10.png",
+      "topic": 5,
+      "page": 10,
+      "source": "lego_style_topik_5_infografik_kaedah_pembelajaran.png",
+      "sha256": "dcd7136941fb979beffc2bd9bad7d86fbaa2cc6b14ea0a250929d1858d7c8406"
+    },
+    {
+      "asset": "topik6-01.png",
+      "topic": 6,
+      "page": 1,
+      "source": "interactive_multimedia_lego_infographic.png",
+      "sha256": "f0ff1d4d54c18153e24118932541c58ac526ef39963096b9022247f297c0c420"
+    },
+    {
+      "asset": "topik6-02.png",
+      "topic": 6,
+      "page": 2,
+      "source": "edup3133_multimedia_interaktif_dalam_pembelajaran.png",
+      "sha256": "6add40e2d7fffdf689497948c8d1f25be6dc332e9417c326625a57a9aae83791"
+    },
+    {
+      "asset": "topik6-03.png",
+      "topic": 6,
+      "page": 3,
+      "source": "lego_styled_multimedia_elements_infographic.png",
+      "sha256": "2d1551ba395701ad3b8d87e0a3b616f3de63bdf888a27c56d4d18c1441fc1f42"
+    },
+    {
+      "asset": "topik6-04.png",
+      "topic": 6,
+      "page": 4,
+      "source": "memilih_media_untuk_pembelajaran_bermakna.png",
+      "sha256": "21652ff48f4b76d703c7724d066d0e908df77f8fbf4cbb6de95b83aaf7327b5d"
+    },
+    {
+      "asset": "topik6-05.png",
+      "topic": 6,
+      "page": 5,
+      "source": "pembelajaran_multimedia_nota_infografik_edukatif.png",
+      "sha256": "b190bdecdfa30d0e9b4fc5d46d568db7f9f457bc55c35bf11296c2ae1b92d675"
+    },
+    {
+      "asset": "topik6-06.png",
+      "topic": 6,
+      "page": 6,
+      "source": "casper_lego_infographic_prinsip_reka_bentuk.png",
+      "sha256": "aba2e7e63668e753d796761f01a155d1bc9c0c6b33e5ff025f17f11ce5d98e3f"
+    },
+    {
+      "asset": "topik6-07.png",
+      "topic": 6,
+      "page": 7,
+      "source": "lego_inspired_educational_software_infographic.png",
+      "sha256": "6af45261bb225bdc26f573e9a3335913e4fa5b797ad8987781c5cea69b38e94d"
+    },
+    {
+      "asset": "topik6-08.png",
+      "topic": 6,
+      "page": 8,
+      "source": "interactive_multimedia_learning_infographic.png",
+      "sha256": "ebd7474887dfb08db38f61a551dddbeb9b6b14735827363771eb9bf3594e572c"
+    },
+    {
+      "asset": "topik6-09.png",
+      "topic": 6,
+      "page": 9,
+      "source": "edup3133_aliran_pembangunan_multimedia.png",
+      "sha256": "d2d73e94790e475ac6e4097cfa707caba4abf6bc5370cdc2a3056dd327005350"
+    },
+    {
+      "asset": "topik6-10.png",
+      "topic": 6,
+      "page": 10,
+      "source": "edup3133_topik_6_rumusan_infografik.png",
+      "sha256": "b50bc3650917cb22cec36f33ed076c05e1e67b84e11fd6e464d9a80a9fddc445"
+    },
+    {
+      "asset": "topik7-01.png",
+      "topic": 7,
+      "page": 1,
+      "source": "topik_7_pembelajaran_dalam_talian.png",
+      "sha256": "754679d1056ecd0aafeeb5961b15039c86ab45e80d8e375994c2f838678b64dd"
+    },
+    {
+      "asset": "topik7-02.png",
+      "topic": 7,
+      "page": 2,
+      "source": "lego_infographic_online_learning_concepts_and_rol.png",
+      "sha256": "83d3088a5e2f6fcf7b03bbf306c8202b5d3ce89f32c7fbc7e8b51531f0a73d45"
+    },
+    {
+      "asset": "topik7-03.png",
+      "topic": 7,
+      "page": 3,
+      "source": "edup3133_segerak_vs_tidak_segerak.png",
+      "sha256": "b839c2745d4fc7045ec56b2183e0b1243ed5724ff950b1a090660bc986ce7b1c"
+    },
+    {
+      "asset": "topik7-04.png",
+      "topic": 7,
+      "page": 4,
+      "source": "edup3133_blended_vs_hybrid_infographic.png",
+      "sha256": "9df2fb70a877cbfe7a6c37aa64336b00c863ce8a70ec257bd9fff67ef1e8c1e6"
+    },
+    {
+      "asset": "topik7-05.png",
+      "topic": 7,
+      "page": 5,
+      "source": "edup3133_topik_7_bezakan_empat_mod.png",
+      "sha256": "2602a668dfc62114d638686493f4c56da46e0453d987744675372baf280d0a1d"
+    },
+    {
+      "asset": "topik7-06.png",
+      "topic": 7,
+      "page": 6,
+      "source": "lego_live_streaming_education_infographic.png",
+      "sha256": "2eed4d233e62bb06f75d4ba6ceac5db255918de2945a1ff39cf57e9d69a50dbd"
+    },
+    {
+      "asset": "topik7-07.png",
+      "topic": 7,
+      "page": 7,
+      "source": "rancang_dan_laksana_live_streaming.png",
+      "sha256": "aab5b45a65417f0fa177d682c243691be391fb772b4e005a23b7754a6e55039f"
+    },
+    {
+      "asset": "topik7-08.png",
+      "topic": 7,
+      "page": 8,
+      "source": "edup3133_topic_7_teacher_and_student_roles.png",
+      "sha256": "562b1e0f577aae72d7f1654c8ab43e2477acda340cb7b12e57f094f720bc67b5"
+    },
+    {
+      "asset": "topik7-09.png",
+      "topic": 7,
+      "page": 9,
+      "source": "peta_pemilihan_mod_edup3133.png",
+      "sha256": "f32aedf28ee3418343dfb0e2598390e197e281879005e1605777394c859e6c90"
+    },
+    {
+      "asset": "topik7-10.png",
+      "topic": 7,
+      "page": 10,
+      "source": "edup3133_topik_7_rumusan_infografik_lego.png",
+      "sha256": "0b3df551141a5735614e3e8a5d708a841e6b52839ed498eb93bf15ac8708577c"
+    },
+    {
+      "asset": "topik8-01.png",
+      "topic": 8,
+      "page": 1,
+      "source": "edup3133_topik_8_teknologi_dalam_pendidikan.png",
+      "sha256": "13da1fcbb424b80908add8a074d4f8e50573bfa91d3b68d6b7edcea88b1f8b48"
+    },
+    {
+      "asset": "topik8-02.png",
+      "topic": 8,
+      "page": 2,
+      "source": "edup3133_integriti_digital_beretika.png",
+      "sha256": "0c0cacd9e43b17d1bdedc2dc67ab8ef740d7c820668fc481371e79bd8305ce4f"
+    },
+    {
+      "asset": "topik8-03.png",
+      "topic": 8,
+      "page": 3,
+      "source": "ai_dalam_pendidikan_infografik_lego_edup3133.png",
+      "sha256": "9ea1b9c42d66e3c035cf4c7a89a511ce0312a1069a01ff8b018b7b3a04e1150d"
+    },
+    {
+      "asset": "topik8-04.png",
+      "topic": 8,
+      "page": 4,
+      "source": "etika_digital_dan_keselamatan_data.png",
+      "sha256": "6ea679d50c42b9504dd77c5e75272ee9ed8fcadca1c5e2fe65a1e6054144b483"
+    },
+    {
+      "asset": "topik8-05.png",
+      "topic": 8,
+      "page": 5,
+      "source": "edup3133_peta_pemilihan_teknologi.png",
+      "sha256": "84a6e313d98fd82c8a777498cabe3367982ab243c374ecca2dc288575482ad18"
+    },
+    {
+      "asset": "topik8-06.png",
+      "topic": 8,
+      "page": 6,
+      "source": "ar_vr_mr_learning_infographic.png",
+      "sha256": "ef5bb027310d7f451a760689d59e7e842bbe015d370fee8114bb1cb6c5e26b0b"
+    },
+    {
+      "asset": "topik8-07.png",
+      "topic": 8,
+      "page": 7,
+      "source": "teknologi_pendidikan_iot_hingga_gamifikasi.png",
+      "sha256": "fb2b615e995fb4b111153a550b0136662f8e71af8ef1eb673280d4bf385407e8"
+    },
+    {
+      "asset": "topik8-08.png",
+      "topic": 8,
+      "page": 8,
+      "source": "ai_kompetensi_digital_dan_pendidikan_inklusif.png",
+      "sha256": "43352f1a8148d0212ad2fe37a7f5d5a9ab708093f9a514c707de54733ce44393"
+    },
+    {
+      "asset": "topik8-09.png",
+      "topic": 8,
+      "page": 9,
+      "source": "edup3133_cabaran_pelaksanaan_teknologi.png",
+      "sha256": "26724c096695ac9bee1a1ed56a55d1497a445d838761a7624126a17add952475"
+    },
+    {
+      "asset": "topik8-10.png",
+      "topic": 8,
+      "page": 10,
+      "source": "responsible_technology_integration_infographic.png",
+      "sha256": "8c2ea5b94a96fc1c7a110feb45e6f7da8e3007b02230617b9d44bc44ea98060d"
+    }
+  ]
+}

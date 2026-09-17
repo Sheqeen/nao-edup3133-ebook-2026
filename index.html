@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>EDUP3133 Interactive e-Book 2026</title>
+<style>
+*{box-sizing:border-box}
+:root{--accent:#e93e7c;--accent-soft:#fff0f5}
+html,body{margin:0;min-height:100%;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#fff8f6;color:#102a54}
+button{font:inherit}
+.app{min-height:100vh}
+.view{display:none;min-height:100vh}
+.view.active{display:flex}
+.home-view{align-items:center;justify-content:center;padding:0;background:#fff5f2}
+.cover-shell{position:relative;width:min(100vw,177.68vh);aspect-ratio:1672/941;max-height:100vh;background:white;overflow:hidden}
+.cover-shell>img{display:block;width:100%;height:100%;object-fit:contain}
+.topic-hotspot{position:absolute;border:3px solid transparent;border-radius:24px;background:transparent;cursor:pointer;transition:.18s ease}
+.topic-hotspot:hover,.topic-hotspot:focus-visible{outline:none;border-color:#fff;box-shadow:0 0 0 4px color-mix(in srgb,var(--hotspot) 72%,transparent),0 8px 28px rgba(16,42,84,.18);background:rgba(255,255,255,.08)}
+.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.mobile-topic-grid{display:none}
+.notes-view{flex-direction:column;background:linear-gradient(180deg,#fff 0,var(--accent-soft) 100%)}
+.toolbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:12px;padding:10px 14px;background:rgba(255,255,255,.96);border-bottom:1px solid #e8dce0;backdrop-filter:blur(10px);box-shadow:0 4px 16px rgba(64,28,36,.06)}
+.toolbar-title{font-weight:800;line-height:1.1;min-width:0;flex:1}
+.toolbar-title small{display:block;color:#6c6570;font-weight:600;margin-top:3px}
+.btn{border:1px solid #ddd3d7;background:#fff;border-radius:14px;padding:10px 14px;font-weight:750;color:#17345d;cursor:pointer;box-shadow:0 3px 10px rgba(40,25,29,.05)}
+.btn:hover,.btn:focus-visible{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 18%,transparent)}
+.btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.btn:disabled{opacity:.35;cursor:not-allowed}
+.viewer-wrap{flex:1;display:flex;align-items:center;justify-content:center;padding:14px 14px 8px;min-height:0}
+.note-frame{width:min(100%,calc((100vh - 142px)*1.7768));aspect-ratio:1672/941;display:flex;align-items:center;justify-content:center;background:white;border-radius:16px;overflow:hidden;box-shadow:0 10px 34px rgba(52,35,43,.13)}
+.note-frame img{display:block;width:100%;height:100%;object-fit:contain}
+.pager{display:flex;justify-content:center;align-items:center;gap:8px;flex-wrap:wrap;padding:8px 14px 14px}
+.page-dot{width:38px;height:38px;border-radius:50%;border:1px solid #ddd2d6;background:#fff;color:#12305c;font-weight:800;cursor:pointer}
+.page-dot.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.page-dot:hover,.page-dot:focus-visible{outline:none;box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 18%,transparent)}
+.page-status{font-weight:800;color:var(--accent);padding:0 6px;white-space:nowrap}
+.hint{font-size:12px;color:#746c71;text-align:center;padding:0 12px 10px}
+.mobile-topic-button{border:none;border-radius:16px;color:#fff;padding:13px 14px;font-weight:800;box-shadow:0 7px 18px rgba(27,30,53,.12);text-align:left;cursor:pointer}
+.mobile-topic-button small{display:block;font-weight:600;opacity:.9;margin-top:3px}
+@media(max-width:780px){
+  .home-view{padding:8px;flex-direction:column;gap:10px}
+  .cover-shell{width:100%;max-height:none}
+  .topic-hotspot{display:none}
+  .mobile-topic-grid{display:grid;grid-template-columns:1fr;gap:8px;width:min(560px,calc(100% - 20px));margin:0 auto 16px}
+  .toolbar{padding:8px;gap:7px;flex-wrap:wrap}
+  .toolbar-title{font-size:14px;order:1;flex-basis:calc(100% - 95px)}
+  .toolbar-title small{font-size:11px}
+  .btn{padding:9px 10px;font-size:13px}
+  #homeBtn{order:0}
+  #prevBtn{order:2;flex:1}
+  #pageStatus{order:3}
+  #nextBtn{order:4;flex:1}
+  .viewer-wrap{padding:8px 5px}
+  .note-frame{width:100%;border-radius:10px;box-shadow:0 5px 18px rgba(52,35,43,.12)}
+  .page-dot{width:33px;height:33px}
+  .pager{gap:5px;padding:6px 6px 10px}
+  .hint{font-size:11px}
+}
+</style>
+</head>
+<body>
+<main class="app">
+<section id="homeView" class="view home-view active" aria-label="Muka utama e-book">
+  <div class="cover-shell">
+    <img src="assets/home.png" alt="Muka depan EDUP3133 Teknologi untuk Pengajaran dan Pembelajaran">
+    <button class="topic-hotspot" data-topic="1" aria-label="Buka Nota Topik 1" style="left:71.1%;top:4.3%;width:26.8%;height:9.6%;--hotspot:#e93e7c"><span class="sr-only">Buka Topik 1</span></button><button class="topic-hotspot" data-topic="2" aria-label="Buka Nota Topik 2" style="left:71.1%;top:15.0%;width:26.8%;height:9.6%;--hotspot:#6f9e4a"><span class="sr-only">Buka Topik 2</span></button><button class="topic-hotspot" data-topic="3" aria-label="Buka Nota Topik 3" style="left:71.1%;top:25.7%;width:26.8%;height:9.6%;--hotspot:#3097dd"><span class="sr-only">Buka Topik 3</span></button><button class="topic-hotspot" data-topic="4" aria-label="Buka Nota Topik 4" style="left:71.1%;top:36.4%;width:26.8%;height:9.6%;--hotspot:#9a63d8"><span class="sr-only">Buka Topik 4</span></button><button class="topic-hotspot" data-topic="5" aria-label="Buka Nota Topik 5" style="left:71.1%;top:47.1%;width:26.8%;height:9.6%;--hotspot:#eb634e"><span class="sr-only">Buka Topik 5</span></button><button class="topic-hotspot" data-topic="6" aria-label="Buka Nota Topik 6" style="left:71.1%;top:57.8%;width:26.8%;height:9.6%;--hotspot:#149aa0"><span class="sr-only">Buka Topik 6</span></button><button class="topic-hotspot" data-topic="7" aria-label="Buka Nota Topik 7" style="left:71.1%;top:68.5%;width:26.8%;height:9.6%;--hotspot:#d2a000"><span class="sr-only">Buka Topik 7</span></button><button class="topic-hotspot" data-topic="8" aria-label="Buka Nota Topik 8" style="left:71.1%;top:79.2%;width:26.8%;height:9.6%;--hotspot:#7548b5"><span class="sr-only">Buka Topik 8</span></button>
+  </div>
+  <div class="mobile-topic-grid" aria-label="Senarai Topik 1 hingga 8">
+    <button class="mobile-topic-button" data-topic="1" style="background:#e93e7c">TOPIK 1<small>Teknologi Pendidikan dan Teknologi Pengajaran</small></button><button class="mobile-topic-button" data-topic="2" style="background:#6f9e4a">TOPIK 2<small>Model Pengintegrasian Teknologi dalam PdP</small></button><button class="mobile-topic-button" data-topic="3" style="background:#3097dd">TOPIK 3<small>Reka Bentuk Pengajaran</small></button><button class="mobile-topic-button" data-topic="4" style="background:#9a63d8">TOPIK 4<small>Media Pengajaran dan Sumber Pembelajaran dalam Talian</small></button><button class="mobile-topic-button" data-topic="5" style="background:#eb634e">TOPIK 5<small>Pembangunan Objek Pembelajaran Digital</small></button><button class="mobile-topic-button" data-topic="6" style="background:#149aa0">TOPIK 6<small>Multimedia Interaktif dalam PdP</small></button><button class="mobile-topic-button" data-topic="7" style="background:#d2a000">TOPIK 7<small>Persekitaran Pembelajaran dalam Talian</small></button><button class="mobile-topic-button" data-topic="8" style="background:#7548b5">TOPIK 8<small>Trend Teknologi, Isu dan Cabaran Pengintegrasian Teknologi dalam PdP</small></button>
+  </div>
+</section>
+
+<section id="notesView" class="view notes-view" aria-label="Nota infografik">
+  <header class="toolbar">
+    <button id="homeBtn" class="btn primary" aria-label="Kembali ke halaman utama">🏠 UTAMA</button>
+    <div id="topicTitle" class="toolbar-title">TOPIK 1 — Teknologi Pendidikan dan Teknologi Pengajaran
+      <small>Nota Infografik • Edisi e-Book Pelajar</small>
+    </div>
+    <button id="prevBtn" class="btn">← SEBELUM</button>
+    <span id="pageStatus" class="page-status">Halaman 1 / 10</span>
+    <button id="nextBtn" class="btn">SETERUSNYA →</button>
+  </header>
+  <div class="viewer-wrap">
+    <div class="note-frame">
+      <img id="noteImage" src="assets/topik1-01.png" alt="Nota Infografik Topik 1 — Halaman 1 daripada 10">
+    </div>
+  </div>
+  <nav class="pager" aria-label="Navigasi halaman topik"><button class="page-dot" aria-label="Halaman 1">1</button><button class="page-dot" aria-label="Halaman 2">2</button><button class="page-dot" aria-label="Halaman 3">3</button><button class="page-dot" aria-label="Halaman 4">4</button><button class="page-dot" aria-label="Halaman 5">5</button><button class="page-dot" aria-label="Halaman 6">6</button><button class="page-dot" aria-label="Halaman 7">7</button><button class="page-dot" aria-label="Halaman 8">8</button><button class="page-dot" aria-label="Halaman 9">9</button><button class="page-dot" aria-label="Halaman 10">10</button></nav>
+  <div class="hint">Tip: guna ← / → pada papan kekunci untuk bergerak antara halaman. Tekan butang UTAMA untuk kembali ke muka depan.</div>
+</section>
+</main>
+<script>
+const TOPICS={"1": {"title": "Teknologi Pendidikan dan Teknologi Pengajaran", "accent": "#e93e7c", "soft": "#fff0f5", "slug": "topik-1", "assets": ["assets/topik1-01.png", "assets/topik1-02.png", "assets/topik1-03.png", "assets/topik1-04.png", "assets/topik1-05.png", "assets/topik1-06.png", "assets/topik1-07.png", "assets/topik1-08.png", "assets/topik1-09.png", "assets/topik1-10.png"]}, "2": {"title": "Model Pengintegrasian Teknologi dalam PdP", "accent": "#6f9e4a", "soft": "#f2f8ed", "slug": "topik-2", "assets": ["assets/topik2-01.png", "assets/topik2-02.png", "assets/topik2-03.png", "assets/topik2-04.png", "assets/topik2-05.png", "assets/topik2-06.png", "assets/topik2-07.png", "assets/topik2-08.png", "assets/topik2-09.png", "assets/topik2-10.png"]}, "3": {"title": "Reka Bentuk Pengajaran", "accent": "#3097dd", "soft": "#eef8ff", "slug": "topik-3", "assets": ["assets/topik3-01.png", "assets/topik3-02.png", "assets/topik3-03.png", "assets/topik3-04.png", "assets/topik3-05.png", "assets/topik3-06.png", "assets/topik3-07.png", "assets/topik3-08.png", "assets/topik3-09.png", "assets/topik3-10.png"]}, "4": {"title": "Media Pengajaran dan Sumber Pembelajaran dalam Talian", "accent": "#9a63d8", "soft": "#f7f0ff", "slug": "topik-4", "assets": ["assets/topik4-01.png", "assets/topik4-02.png", "assets/topik4-03.png", "assets/topik4-04.png", "assets/topik4-05.png", "assets/topik4-06.png", "assets/topik4-07.png", "assets/topik4-08.png", "assets/topik4-09.png", "assets/topik4-10.png"]}, "5": {"title": "Pembangunan Objek Pembelajaran Digital", "accent": "#eb634e", "soft": "#fff3ef", "slug": "topik-5", "assets": ["assets/topik5-01.png", "assets/topik5-02.png", "assets/topik5-03.png", "assets/topik5-04.png", "assets/topik5-05.png", "assets/topik5-06.png", "assets/topik5-07.png", "assets/topik5-08.png", "assets/topik5-09.png", "assets/topik5-10.png"]}, "6": {"title": "Multimedia Interaktif dalam PdP", "accent": "#149aa0", "soft": "#edfafa", "slug": "topik-6", "assets": ["assets/topik6-01.png", "assets/topik6-02.png", "assets/topik6-03.png", "assets/topik6-04.png", "assets/topik6-05.png", "assets/topik6-06.png", "assets/topik6-07.png", "assets/topik6-08.png", "assets/topik6-09.png", "assets/topik6-10.png"]}, "7": {"title": "Persekitaran Pembelajaran dalam Talian", "accent": "#d2a000", "soft": "#fff9df", "slug": "topik-7", "assets": ["assets/topik7-01.png", "assets/topik7-02.png", "assets/topik7-03.png", "assets/topik7-04.png", "assets/topik7-05.png", "assets/topik7-06.png", "assets/topik7-07.png", "assets/topik7-08.png", "assets/topik7-09.png", "assets/topik7-10.png"]}, "8": {"title": "Trend Teknologi, Isu dan Cabaran Pengintegrasian Teknologi dalam PdP", "accent": "#7548b5", "soft": "#f5effd", "slug": "topik-8", "assets": ["assets/topik8-01.png", "assets/topik8-02.png", "assets/topik8-03.png", "assets/topik8-04.png", "assets/topik8-05.png", "assets/topik8-06.png", "assets/topik8-07.png", "assets/topik8-08.png", "assets/topik8-09.png", "assets/topik8-10.png"]}};
+let currentTopic=1;
+let currentPage=1;
+const TOTAL=10;
+const homeView=document.getElementById('homeView');
+const notesView=document.getElementById('notesView');
+const noteImage=document.getElementById('noteImage');
+const status=document.getElementById('pageStatus');
+const prevBtn=document.getElementById('prevBtn');
+const nextBtn=document.getElementById('nextBtn');
+const dots=[...document.querySelectorAll('.page-dot')];
+const titleEl=document.getElementById('topicTitle');
+
+function cfg(){return TOPICS[String(currentTopic)]}
+function asset(topic,page){return TOPICS[String(topic)].assets[page-1]}
+function applyTheme(){
+  const c=cfg();
+  document.documentElement.style.setProperty('--accent',c.accent);
+  document.documentElement.style.setProperty('--accent-soft',c.soft);
+}
+function showHome(push=true){
+  homeView.classList.add('active');
+  notesView.classList.remove('active');
+  if(push) location.hash='home';
+  document.title='EDUP3133 Interactive e-Book — Utama';
+}
+function showTopic(topic=1,page=1,push=true){
+  topic=Number(topic);
+  if(!TOPICS[String(topic)]) topic=1;
+  currentTopic=topic;
+  currentPage=Math.min(TOTAL,Math.max(1,Number(page)||1));
+  applyTheme();
+  homeView.classList.remove('active');
+  notesView.classList.add('active');
+  renderPage();
+  if(push) location.hash=`topik-${currentTopic}/${currentPage}`;
+  document.title=`EDUP3133 — Topik ${currentTopic} (${currentPage}/10)`;
+}
+function renderPage(){
+  const c=cfg();
+  noteImage.src=asset(currentTopic,currentPage);
+  noteImage.alt=`Nota Infografik Topik ${currentTopic} — Halaman ${currentPage} daripada ${TOTAL}`;
+  status.textContent=`Halaman ${currentPage} / ${TOTAL}`;
+  titleEl.innerHTML=`TOPIK ${currentTopic} — ${c.title}<small>Nota Infografik • Edisi e-Book Pelajar</small>`;
+  prevBtn.disabled=currentPage===1;
+  nextBtn.disabled=currentPage===TOTAL;
+  dots.forEach((b,i)=>{
+    const active=i+1===currentPage;
+    b.classList.toggle('active',active);
+    b.setAttribute('aria-current',active?'page':'false');
+  });
+}
+function go(delta){
+  const n=currentPage+delta;
+  if(n>=1&&n<=TOTAL) showTopic(currentTopic,n);
+}
+document.querySelectorAll('[data-topic]').forEach(btn=>{
+  btn.addEventListener('click',()=>showTopic(Number(btn.dataset.topic),1));
+});
+document.getElementById('homeBtn').addEventListener('click',()=>showHome());
+prevBtn.addEventListener('click',()=>go(-1));
+nextBtn.addEventListener('click',()=>go(1));
+dots.forEach((b,i)=>b.addEventListener('click',()=>showTopic(currentTopic,i+1)));
+window.addEventListener('keydown',e=>{
+  if(!notesView.classList.contains('active')) return;
+  if(e.key==='ArrowLeft') go(-1);
+  if(e.key==='ArrowRight') go(1);
+  if(e.key==='Home'){e.preventDefault();showHome()}
+});
+function route(){
+  const h=(location.hash||'#home').slice(1);
+  const m=h.match(/^topik-([1-8])(?:\/(\d+))?$/);
+  if(m) showTopic(Number(m[1]),Number(m[2]||1),false);
+  else showHome(false);
+}
+window.addEventListener('hashchange',route);
+route();
+</script>
+</body>
+</html>
